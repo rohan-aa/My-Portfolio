@@ -20,6 +20,7 @@ body {
   padding-top: 100px;
   background-color: var(--bg-color);
 }
+
 h1,
 h2,
 h3 {
@@ -1438,26 +1439,34 @@ footer .latest {
   }
 }
 @media (max-width: 576px) {
+  body,
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header,
+  nav,
+  .nav-center,
+  .hero,
+  .hero-buttons-glass,
+  .half-circle,
+  .candidate-img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   .hero {
     padding-top: 40px !important;
   }
-  .skills .card-header .title span {
-    font-size: 18px;
-  }
 
-  .skills .card-header .title {
-    gap: 8px;
-  }
-  .skill-top span {
-    font-size: 16px;
-  }
   .hero .name {
     margin-left: 0 !important;
     transform: none;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
 
   .hero-buttons-glass {
@@ -1465,27 +1474,10 @@ footer .latest {
     justify-content: center;
     align-items: center;
     bottom: 24px;
+    left: 50%;
     transform: translateX(-50%) scale(0.95);
   }
 
-  .candidate-img img {
-    width: clamp(160px, 45vw, 200px);
-  }
-
-  .half-circle {
-    width: clamp(200px, 55vw, 240px);
-    height: clamp(220px, 45vw, 360px);
-    transform: scaleY(1) scaleX(1.25);
-  }
-
-  .candidate-img {
-    width: clamp(160px, 45vw, 200px);
-  }
-
-  .candidate-img img {
-    width: 400px; /* controlled size */
-    margin-bottom: 10px; /* visually touch curve */
-  }
   .hero-stat {
     transform: scale(0.85);
   }
@@ -1495,7 +1487,6 @@ footer .latest {
     text-align: center !important;
   }
 
-  /* Add some spacing between sections */
   .hero .col-12.text-start {
     margin-bottom: 30px;
   }
@@ -1506,9 +1497,40 @@ footer .latest {
   .hero .center-col .half-circle {
     margin-bottom: 40px;
   }
+
+  .half-circle {
+    width: 90vw;
+    max-width: 100%;
+    height: auto;
+    transform: scaleY(1);
+  }
+
+  .candidate-img {
+    width: 80vw;
+    max-width: 100%;
+  }
+
+  .candidate-img img {
+    width: clamp(160px, 45vw, 200px);
+    margin-bottom: 10px;
+  }
+
+  .skills .card-header .title {
+    gap: 8px;
+  }
+
+  .skills .card-header .title span {
+    font-size: 18px;
+  }
+
+  .skill-top span {
+    font-size: 16px;
+  }
+
   .right-section {
     margin-top: 20px !important;
   }
+
   .projects,
   .trusted,
   .available {
@@ -1516,11 +1538,13 @@ footer .latest {
     flex-direction: column;
     gap: 8px !important;
   }
+
   .projects i,
   .trusted i,
   .available i {
-    font-size: 28px; /* smaller than desktop 40px */
+    font-size: 28px;
   }
+
   .projects p,
   .trusted p,
   .available p {
@@ -1528,42 +1552,79 @@ footer .latest {
   }
 
   .education .row.align-items-center {
-    flex-direction: column; /* stack everything vertically */
+    flex-direction: column;
     text-align: center;
   }
+
   .education .col-md-5,
   .education .col-md-2 {
     max-width: 100%;
     padding: 0;
   }
+
   .education .col-md-5 .ed-1,
   .education .right-card {
-    width: 90%; /* smaller width for mobile */
-    margin: 15px auto; /* center the cards */
+    width: 90%;
+    margin: 15px auto;
     padding: 18px 16px;
     text-align: center !important;
   }
 
   .education .timeline-dot {
-    margin: 25px 0; /* spacing between dots */
+    margin: 25px 0;
   }
 
   .education::before {
-    left: 50%; /* keep vertical timeline centered */
+    left: 50%;
   }
+
   .section-title {
     font-size: 28px !important;
   }
-  .hero .name {
-    align-items: center;
-    text-align: center;
-    transform: none;
-  }
+
   .filter-btns .nav-link {
     font-size: 16px;
     padding: 6px 14px;
   }
+
+  .nav.nav-pills {
+    display: none; /* hide full menu on mobile */
+    flex-direction: column; /* optional if you open it vertically */
+    gap: 12px;
+    background: #fff; /* optional for offcanvas look */
+    position: absolute;
+    top: 70px; /* adjust based on header height */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .nav.nav-pills.active {
+    display: flex; /* show menu when hamburger clicked */
+  }
+  .hamburger {
+    display: flex; /* show hamburger */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000; /* change color if needed */
+    border-radius: 2px;
+  }
+
+  .logo img {
+    height: 40px; /* smaller for mobile */
+  }
 }
+
 /* Mobile-friendly Academic Journey (≤768px) */
 @media (max-width: 768px) {
   .education .row.align-items-center {
