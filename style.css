@@ -1438,196 +1438,6 @@ footer .latest {
     margin-right: 0 !important;
   }
 }
-@media (max-width: 576px) {
-  body,
-  html {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  header,
-  nav,
-  .nav-center,
-  .hero,
-  .hero-buttons-glass,
-  .half-circle,
-  .candidate-img {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .hero {
-    padding-top: 40px !important;
-  }
-
-  .hero .name {
-    margin-left: 0 !important;
-    transform: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-buttons-glass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%) scale(0.95);
-  }
-
-  .hero-stat {
-    transform: scale(0.85);
-  }
-
-  .hero .col-12.text-start,
-  .hero .col-12.text-end {
-    text-align: center !important;
-  }
-
-  .hero .col-12.text-start {
-    margin-bottom: 30px;
-  }
-  .hero .col-12.text-end {
-    margin-top: 30px;
-  }
-
-  .hero .center-col .half-circle {
-    margin-bottom: 40px;
-  }
-
-  .half-circle {
-    width: 90vw;
-    max-width: 100%;
-    height: auto;
-    transform: scaleY(1);
-  }
-
-  .candidate-img {
-    width: 80vw;
-    max-width: 100%;
-    margin-top: 20px;
-  }
-
-  .candidate-img img {
-    width: 60vw; /* smaller percentage of screen width */
-    max-width: 180px; /* hard cap so it never gets too big */
-    height: auto; /* maintain aspect ratio */
-    margin: 0 auto 15px auto;
-    display: block;
-  }
-
-  .skills .card-header .title {
-    gap: 8px;
-  }
-
-  .skills .card-header .title span {
-    font-size: 18px;
-  }
-
-  .skill-top span {
-    font-size: 16px;
-  }
-
-  .right-section {
-    margin-top: 20px !important;
-  }
-
-  .projects,
-  .trusted,
-  .available {
-    display: flex;
-    flex-direction: column;
-    gap: 8px !important;
-  }
-
-  .projects i,
-  .trusted i,
-  .available i {
-    font-size: 28px;
-  }
-
-  .projects p,
-  .trusted p,
-  .available p {
-    font-size: 16px;
-  }
-
-  .education .row.align-items-center {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .education .col-md-5,
-  .education .col-md-2 {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .education .col-md-5 .ed-1,
-  .education .right-card {
-    width: 90%;
-    margin: 15px auto;
-    padding: 18px 16px;
-    text-align: center !important;
-  }
-
-  .education .timeline-dot {
-    margin: 25px 0;
-  }
-
-  .education::before {
-    left: 50%;
-  }
-
-  .section-title {
-    font-size: 28px !important;
-  }
-
-  .filter-btns .nav-link {
-    font-size: 16px;
-    padding: 6px 14px;
-  }
-
-  .nav.nav-pills {
-    display: none; /* hide full menu on mobile */
-    flex-direction: column; /* optional if you open it vertically */
-    gap: 12px;
-    background: #fff; /* optional for offcanvas look */
-    position: absolute;
-    top: 70px; /* adjust based on header height */
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  .nav.nav-pills.active {
-    display: flex; /* show menu when hamburger clicked */
-  }
-  .hamburger {
-    display: flex; /* show hamburger */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 28px;
-    height: 22px;
-    cursor: pointer;
-  }
-
-  .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: var(--bg-color); /* change color if needed */
-    border-radius: 2px;
-  }
-
-  .logo img {
-    height: 40px; /* smaller for mobile */
-  }
-}
 
 /* Mobile-friendly Academic Journey (≤768px) */
 @media (max-width: 768px) {
@@ -1770,24 +1580,28 @@ footer .latest {
   }
 }
 /* ===============================
-   PORTRAIT MOBILE (≤430px)
+   MOBILE DEVICES (≤576px)
 ================================ */
-@media (max-width: 430px) and (orientation: portrait) {
+@media (max-width: 576px) {
+  body,
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   /* ---------- HERO ---------- */
   .hero {
-    padding-top: 30px !important;
+    padding-top: 40px !important;
     padding-bottom: 40px;
-  }
-  .hire {
-    padding: 40px 0;
-  }
-  .hero .name {
-    align-items: center;
     text-align: center;
-    transform: none;
   }
-  .section-title {
-    font-size: 24px !important;
+
+  .hero .name {
+    margin-left: 0 !important;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero .intro-text {
@@ -1795,95 +1609,147 @@ footer .latest {
     line-height: 1.6;
     max-width: 100%;
   }
-  .right-section p {
-    font-size: 16px;
-    margin-top: 12px;
-  }
-  .projects p {
-    font-size: 16px;
-  }
-  .trusted p {
-    font-size: 16px;
-  }
-  .available p {
-    font-size: 16px;
-  }
-  /* Buttons perfectly centered */
+
   .hero-buttons-glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 50%;
-    transform: translateX(-50%) scale(0.9);
+    bottom: 24px;
+    transform: translateX(-50%) scale(0.95);
     margin-top: 20px;
   }
 
-  .candidate-img {
-    bottom: 52px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .candidate-img img {
-    width: 400px; /* controlled size */
-    margin-bottom: -6px; /* visually touch curve */
-  }
-  .img-section {
-    width: 220px;
-    height: 220px;
-  }
-
-  .half-circle {
-    width: 220px;
-    height: 220px;
-    transform: scaleX(1.2);
-  }
-
-  .hero .col-md-3.text-md-end {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Stat block */
   .hero-stat {
+    margin: 20px 0 0 0; /* optional spacing from image */
+    transform: none; /* remove previous scaling transform if needed */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* vertical centering within its box */
     text-align: center;
-    gap: 6px;
-    width: max-content;
-  }
-  .stat-text h3 {
-    font-size: 24px;
+    gap: 8px;
+    width: 100%;
   }
 
-  .timeline-dot {
-    position: absolute;
-    top: -24px; /* TOUCH the card */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 14px;
-    height: 14px;
-    z-index: 5;
+  /* ---------- CANDIDATE IMAGE ---------- */
+  .half-circle {
+    width: 50vw;
+    max-width: 100%;
+    height: clamp(260px, 45vw, 320px); /* increase height so it is visible */
+    transform: scaleY(1);
+    margin: 0 auto 20px auto; /* add bottom spacing for image */
+    z-index: 1; /* make sure it's behind the image */
   }
-  /* ---------- ABOUT / AGGREGATE ---------- */
-  .aggregate {
-    gap: 20px !important;
+
+  .candidate-img {
+    position: absolute; /* absolute so it overlaps half-circle */
+    bottom: 7%; /* sit at bottom of half-circle */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%); /* perfectly centered */
+    width: clamp(180px, 50vw, 220px); /* slightly larger for mobile */
+    z-index: 2; /* on top of half-circle */
+  }
+
+  .candidate-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* ---------- NAVIGATION ---------- */
+  .hamburger {
+    width: 36px; /* slightly bigger */
+    height: 36px; /* square for perfect center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center all lines vertically */
+    align-items: center; /* center lines horizontally */
+    gap: 6px; /* spacing between lines */
+    cursor: pointer;
+    position: relative;
+    z-index: 2000;
+  }
+
+  /* Hamburger lines */
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--bg-color);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center center;
+  }
+
+  .nav.nav-pills {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--text-color);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav.nav-pills.active {
+    display: flex;
+  }
+
+  /* ---------- PROJECTS / STATS ---------- */
+  .projects,
+  .trusted,
+  .available {
+    display: flex;
+    flex-direction: column;
+    gap: 8px !important;
   }
 
   .projects i,
   .trusted i,
   .available i {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .projects p,
   .trusted p,
   .available p {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center !important;
+  }
+
+  .aggregate {
+    gap: 20px !important;
   }
 
   /* ---------- EDUCATION / TIMELINE ---------- */
+  .education .row.align-items-center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .education .col-md-5,
+  .education .col-md-2 {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .education .col-md-5 .ed-1,
+  .education .right-card {
+    width: 90%;
+    margin: 15px auto;
+    padding: 18px 16px;
+    text-align: center !important;
+  }
+
   .education::before {
     left: 50%;
-    height: 90%;
   }
 
   .timeline-dot {
@@ -1891,16 +1757,6 @@ footer .latest {
     height: 14px;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .education .col-md-5 .ed-1,
-  .education .right-card {
-    width: 92%;
-    padding: 16px 14px;
-  }
-
-  .education .row + .row {
-    margin-top: 70px;
   }
 
   /* ---------- FOOTER ---------- */
@@ -1911,47 +1767,61 @@ footer .latest {
   .tag h4 {
     font-size: 22px;
   }
-
   .foot-text p {
     font-size: 14px;
     line-height: 1.6;
   }
-
   .socio-links i {
     font-size: 17px;
   }
-
   .copy p {
     font-size: 12px;
   }
 
-  .test-header .d-icon i {
-    font-size: 24px; /* desktop likely ~22–24px */
+  /* ---------- SKILLS ---------- */
+  .skills .card-header .title {
+    gap: 8px;
   }
-
-  /* Title (Email, Mobile No, etc.) */
-  .test-header .d-name h4 {
+  .skills .card-header .title span {
     font-size: 18px;
-    margin-bottom: 2px;
+  }
+  .skill-top span {
+    font-size: 16px;
+  }
+  .filter-btns .nav-link {
+    font-size: 16px;
+    padding: 6px 14px;
+  }
+}
+
+/* ===============================
+    EXTRA SMALL PHONES (≤430px)
+  ================================ */
+@media (max-width: 430px) {
+  /* Candidate image smaller on very small screens */
+  .candidate-img {
+    width: clamp(120px, 55vw, 140px);
+    margin: 20px auto 15px auto;
   }
 
-  /* Text / links */
-  .test-header .d-name a {
+  .candidate-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 24px !important;
+  }
+
+  .projects p,
+  .trusted p,
+  .available p,
+  .right-section p {
     font-size: 14px;
-    word-break: break-all; /* prevents overflow for long links */
-  }
-
-  /* Reduce spacing slightly */
-  .test-header {
-    gap: 10px !important;
   }
 
   .skills .card-header .title span {
     font-size: 16px;
-  }
-
-  .skills .card-header .title {
-    gap: 8px;
   }
   .skill-top span {
     font-size: 14px;
@@ -1959,5 +1829,12 @@ footer .latest {
   .filter-btns .nav-link {
     font-size: 14px;
     padding: 5px 12px;
+  }
+
+  /* Optional: slightly reduce half-circle for very small devices */
+  .half-circle {
+    width: 220px;
+    height: 220px;
+    transform: scaleX(1.2);
   }
 }
