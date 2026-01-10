@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/rm.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/rm.png" />
+  <link rel="shortcut icon" href="img/rm.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/rm.png" />
+  <link rel="webmanifest" href="img/rm.png" />
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="120" tabindex="0">
+  <header>
+    <nav id="mainNav" class="justify-content-around navbar-expand-lg">
+      <div class="logo d-flex align-items-center gap-1">
+        <a href="#"><img src="img/logo.png" alt="logo" height="52px"></a>
+        <h5>Rohan</h5>
+      </div>
+      <div class="hamburger offcanvas-top">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav nav-pills nav-center">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#project" class="nav-link">Project</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home" data-aos="fade-up">
+      <div class="name mt-4">
+        <a href="#">Hello!</a>
+        <h2>I'm <span>Rohan Mehra</span>, <br><span id="typed-text"></span></h2>
+      </div>
+      <div class="container mt-5">
+
+        <div class="row align-items-start">
+
+          <!-- LEFT -->
+          <div class="col-12 col-md-3 text-md-start text-center">
+            <p class="intro-text">
+              Passionate web developer focused on building clean, responsive &
+              user-friendly interfaces.
+            </p>
+          </div>
+
+          <!-- CENTER (FULL WIDTH ELEMENT) -->
+          <div class="col-md-6 text-center center-col">
+
+            <div class="half-circle"></div>
+
+            <img src="img/candidate1.png" class="candidate-img" alt="candidate">
+
+            <!-- GLASS BUTTON WRAPPER -->
+            <div class="hero-buttons-glass nav-pills">
+              <span class="pill-slider"></span>
+
+              <a href="cv/rohan_cv.pdf" target="_blank" class="glass-btn nav-link active" id="cvBtn">
+                Download CV <i class="fa-solid fa-download"></i>
+              </a>
+
+              <a href="mailto:mehraniraj194@gmail.com" class="glass-btn nav-link text-start " id="hireBtn">
+                Hire Me
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-12 col-md-3 text-md-end text-center">
+            <div class="hero-stat">
+              <i class="fa-solid fa-circle-check"></i>
+              <div class="stat-text">
+                <h3>10+ Projects</h3>
+                <p>Completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--about me-->
+    <section class="hire" id="about" data-aos="fade-right">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-12 col-md-6">
+            <div class="img-section">
+              <img src="img/about_rohan.png" alt="" height="400px" class="img-fluid hire-img">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <div class="right-section">
+              <h3 class="section-title">About <span>Me</span></h3>
+              <p class="mt-3 mt-md-5">Hi, I’m <span>Rohan Mehra</span>,<span>Web Developer</span> passionate
+                about creating responsive and modern websites. As a fresher, I’m focused on learning, building
+                real-world projects, and improving my front-end development skills using the latest web technologies.
+              </p>
+              <div class="aggregate mt-4 mt-md-5 flex-column flex-md-row justify-content-around gap-3 gap-md-0">
+                <div class="projects">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <p class="text-center">5+ Modern Technologies</p>
+                </div>
+                <div class="trusted">
+                  <i class="fa-solid fa-brain"></i>
+                  <p class="text-center">Problem-Solving Mindset</p>
+                </div>
+                <div class="available">
+                  <i class="fa-solid fa-headset"></i>
+                  <p class="text-center">Online Support</p>
+                </div>
+              </div>
+              <div class="cv mt-3 mt-md-4">
+                <a href="mailto:mehraniraj194@gmail.com" class="btn">Contact Me <i
+                    class="fa-solid fa-paper-plane"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--skills-->
+    <section class="skills" id="skills" data-aos="zoom-in">
+      <div class="container">
+        <div class="skill-head">
+          <h3 class="text-center mt-5 section-title">Skills & <span>Expertise</span></h3>
+          <p class="text-center text-black">I work with modern web technologies and design tools to create responsive,
+            user-friendly, and visually engaging digital experiences. My focus is on clean code, intuitive design, and
+            continuous learning.</p>
+        </div>
+        <div class="accordion" id="accordionSkills">
+          <div class="row align-items-start">
+            <div class="col-md-4">
+              <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header">
+                  <a href="#frontendCollapse" class="accordion-btn" data-bs-toggle="collapse">
+                    <div class="title">
+                      <i class="fa-solid fa-code"></i>
+                      <span>Frontend Developer</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                </div>
+                <div class="collapse show" id="frontendCollapse" data-bs-parent="#accordionSkills">
+                  <div class="card-body d-flex flex-wrap">
+                    <div class="skill-row mb-4">
+
+                      <!-- TOP ROW -->
+                      <div class="skill-top d-flex justify-content-between align-items-center">
+                        <div class="skill-title d-flex align-items-center gap-2">
+                          <i class="fa-brands fa-html5 text-danger"></i>
+                          <span>HTML</span>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                      </div>
+
+                      <!-- PROGRESS BAR -->
+                      <div class="progress skill-progress">
+                        <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-row mb-4">
+
+                      <!-- TOP ROW -->
+                      <div class="skill-top d-flex justify-content-between align-items-center">
+                        <div class="skill-title d-flex align-items-center gap-2">
+                          <i class="fa-brands fa-css3-alt text-primary"></i>
+                          <span>CSS</span>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                      </div>
+
+                      <!-- PROGRESS BAR -->
+                      <div class="progress skill-progress">
+                        <div class="progress-bar progress-bar-striped" style="width: 80%"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-row mb-4">
+
+                      <!-- TOP ROW -->
+                      <div class="skill-top d-flex justify-content-between align-items-center">
+                        <div class="skill-title d-flex align-items-center gap-2">
+                          <i class="fa-brands fa-js text-warning"></i>
+                          <span>JavaScript</span>
+                        </div>
+                        <span class="skill-percent">60%</span>
+                      </div>
+
+                      <!-- PROGRESS BAR -->
+                      <div class="progress skill-progress">
+                        <div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-row mb-4">
+
+                      <!-- TOP ROW -->
+                      <div class="skill-top d-flex justify-content-between align-items-center">
+                        <div class="skill-title d-flex align-items-center gap-2">
+                          <img src="img/bootstrap.png" alt="" height="20px" class="bs">
+                          <span>Bootstrap</span>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                      </div>
+
+                      <!-- PROGRESS BAR -->
+                      <div class="progress skill-progress">
+                        <div class="progress-bar progress-bar-striped" style="width: 70%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="accordion" id="accordionSkills">
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card-header">
+                    <a href="#designerCollapse" class="accordion-btn" data-bs-toggle="collapse">
+                      <div class="title">
+                        <i class="fa-solid fa-brush"></i>
+                        <span>Designer</span>
+                      </div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse" id="designerCollapse" data-bs-parent="#accordionSkills">
+                    <div class="card-body d-flex flex-wrap">
+                      <div class="skill-row mb-4">
+
+                        <!-- TOP ROW -->
+                        <div class="skill-top d-flex justify-content-between align-items-center">
+                          <div class="skill-title d-flex align-items-center gap-2">
+                            <img src="img/figm.png" alt="" height="20px" class="fm">
+                            <span>Figma</span>
+                          </div>
+                          <span class="skill-percent">80%</span>
+                        </div>
+
+                        <!-- PROGRESS BAR -->
+                        <div class="progress skill-progress">
+                          <div class="progress-bar progress-bar-striped" style="width: 80%"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-row mb-4">
+
+                        <!-- TOP ROW -->
+                        <div class="skill-top d-flex justify-content-between align-items-center">
+                          <div class="skill-title d-flex align-items-center gap-2">
+                            <img src="img/ps.png" alt="" height="20px" class="ps">
+                            <span>Adobe Photoshop</span>
+                          </div>
+                          <span class="skill-percent">60%</span>
+                        </div>
+
+                        <!-- PROGRESS BAR -->
+                        <div class="progress skill-progress">
+                          <div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-row mb-4">
+
+                        <!-- TOP ROW -->
+                        <div class="skill-top d-flex justify-content-between align-items-center">
+                          <div class="skill-title d-flex align-items-center gap-2">
+                            <img src="img/illustartor.png" alt="" height="20px" class="ai">
+                            <span>Adobe Illustrator</span>
+                          </div>
+                          <span class="skill-percent">80%</span>
+                        </div>
+
+                        <!-- PROGRESS BAR -->
+                        <div class="progress skill-progress">
+                          <div class="progress-bar progress-bar-striped" style="width: 80%"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-row mb-4">
+
+                        <!-- TOP ROW -->
+                        <div class="skill-top d-flex justify-content-between align-items-center">
+                          <div class="skill-title d-flex align-items-center gap-2">
+                            <i class="fa-brands fa-wordpress text-primary"></i>
+                            <span>WordPress</span>
+                          </div>
+                          <span class="skill-percent">60%</span>
+                        </div>
+
+                        <!-- PROGRESS BAR -->
+                        <div class="progress skill-progress">
+                          <div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="accordion" id="accordionSkills">
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card-header">
+                    <a href="#backendCollapse" class="accordion-btn" data-bs-toggle="collapse">
+                      <div class="title">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>Backend Developer</span>
+                      </div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse show" id="backendCollapse" data-bs-parent="#accordionSkills">
+                    <div class="card-body d-flex flex-wrap">
+                      <div class="skill-row mb-4">
+
+                        <!-- TOP ROW -->
+                        <div class="skill-top d-flex justify-content-between align-items-center">
+                          <div class="skill-title d-flex align-items-center gap-2">
+                            <img src="img/mysql.webp" alt="" height="20px" class="sq">
+                            <span>MySQL</span>
+                          </div>
+                          <span class="skill-percent">50%</span>
+                        </div>
+
+                        <!-- PROGRESS BAR -->
+                        <div class="progress skill-progress">
+                          <div class="progress-bar progress-bar-striped" style="width: 50%"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-row mb-4">
+
+                        <!-- TOP ROW -->
+                        <div class="skill-top d-flex justify-content-between align-items-center">
+                          <div class="skill-title d-flex align-items-center gap-2">
+                            <img src="img/PHP.png" alt="" height="20px" class="ph">
+                            <span>PHP</span>
+                          </div>
+                          <span class="skill-percent">40%</span>
+                        </div>
+
+                        <!-- PROGRESS BAR -->
+                        <div class="progress skill-progress">
+                          <div class="progress-bar progress-bar-striped" style="width: 40%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--education-->
+    <section class="education py-5" id="education" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5 section-title">
+          <span>Academic</span> Journey
+        </h2>
+        <!-- ROW 1 -->
+        <div class="row align-items-center mb-5 g-0">
+
+          <!-- LEFT CARD -->
+          <div class="col-md-5 px-0">
+            <div class="card ed-1 text-end" data-aos="fade-right">
+              <div class="card-header">
+                <h4>Graphic & Web Designing & Development</h4>
+                <p>2024 – Present*</p>
+                <span>Arena Animation, Kalkaji</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTER DOT -->
+          <div class="col-md-2 d-flex justify-content-center">
+            <span class="timeline-dot"></span>
+          </div>
+
+          <!-- EMPTY RIGHT -->
+          <div class="col-md-5 px-0"></div>
+        </div>
+
+
+        <!-- ROW 2 -->
+        <div class="row align-items-center mb-5 g-0">
+
+          <!-- EMPTY LEFT -->
+          <div class="col-md-5 px-0"></div>
+
+          <!-- CENTER DOT -->
+          <div class="col-md-2 d-flex justify-content-center">
+            <span class="timeline-dot dark"></span>
+          </div>
+
+          <!-- RIGHT CARD -->
+          <div class="col-md-5 px-0">
+            <div class="card ed-1 text-start right-card" data-aos="fade-left">
+              <div class="card-header">
+                <h4>Bachelor of Commerce</h4>
+                <p>2024 – Present*</p>
+                <span>Delhi University</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- ROW 3 (LEFT CARD) -->
+        <div class="row align-items-center mb-5 g-0">
+
+          <!-- LEFT CARD -->
+          <div class="col-md-5 px-0">
+            <div class="card ed-1 text-end" data-aos="fade-right">
+              <div class="card-header">
+                <h4>Higher Secondary (12th)</h4>
+                <p>2023 – 2024</p>
+                <span>Government Co-ed Sr. Secondary School No.3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTER DOT -->
+          <div class="col-md-2 d-flex justify-content-center">
+            <span class="timeline-dot"></span>
+          </div>
+
+          <!-- EMPTY RIGHT -->
+          <div class="col-md-5 px-0"></div>
+        </div>
+
+        <!-- ROW 4 -->
+        <div class="row align-items-center g-0">
+
+          <!-- EMPTY LEFT  -->
+          <div class="col-md-5 px-0"></div>
+
+          <!-- CENTER DOT -->
+          <div class="col-md-2 d-flex justify-content-center">
+            <span class="timeline-dot"></span>
+          </div>
+
+          <!-- RIGHT CARD -->
+          <div class="col-md-5 px-0">
+            <div class="card ed-1 text-start right-card" data-aos="fade-left">
+              <div class="card-header">
+                <h4>Secondary School (10th)</h4>
+                <p>2021 – 2022</p>
+                <span>Government Co-ed Sr. Secondary School No.3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--portfolio-->
+    <section class="portfolio mt-5" id="project" data-aos="fade-up">
+      <div class="container">
+        <div class="port-head">
+          <h3 class="text-center section-title">Explore Our <br>Featured <span>Projects</span></h3>
+        </div>
+        <div class="row align-items-start">
+          <div class="py-5">
+            <ul class="nav filter-btns justify-content-center mb-4" id="projectTabs">
+              <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" data-bs-target="#landing">Landing
+                  Page</a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" data-bs-target="#mobile">Mobile
+                  App</a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" data-bs-target="#case">Case Study</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" data-bs-target="#hero">Website Design</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" data-bs-target="#product">Mini Projects</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="landing">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-4">
+                    <div class="project-card-modern" data-aos="zoom-in" data-aos-delay="150">
+
+                      <!-- Image -->
+                      <div class="project-img">
+                        <img src="img/fullbelly.png" alt="Project Image">
+                      </div>
+
+                      <!-- Content -->
+                      <div class="project-content">
+
+                        <!-- Tech Pills -->
+                        <div class="project-tags">
+                          <span class="tag">HTML</span>
+                          <span class="tag">CSS</span>
+                        </div>
+
+                        <!-- Title + Button -->
+                        <div class="project-footer">
+                          <div class="project-body">
+                            <h5 class="project-title">
+                              <span>FullBelly</span> – Real-Time <br> Food Surplus Donation Platform
+                            </h5>
+                            <p class="mt-2 text-black">FullBelly, a donation platform that connects surplus food
+                              providers
+                              (restaurants, homes, events) with verified NGOs.</p>
+                          </div>
+
+                          <div class="project-btn">
+                            <a href="https://rohan-aa.github.io/Fullbelly/" target="_blank" class="btn-demo"
+                              rel="noopener noreferrer" aria-label="live">
+                              Live Demo<svg class="icon-arrow" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-lg-4 col-md-4">
+                    <div class="project-card-modern" data-aos="zoom-in" data-aos-delay="150">
+
+                      <!-- Image -->
+                      <div class="project-img">
+                        <img src="img/arena.png" alt="Project Image">
+                      </div>
+
+                      <!-- Content -->
+                      <div class="project-content">
+
+                        <!-- Tech Pills -->
+                        <div class="project-tags">
+                          <span class="tag">HTML</span>
+                          <span class="tag">CSS</span>
+                        </div>
+
+                        <!-- Title + Button -->
+                        <div class="project-footer">
+                          <div class="project-body">
+                            <h5 class="project-title">
+                              <span>Arena Animation</span> - <br> Landing Page Redesign
+                            </h5>
+
+                            <p class="mt-2 text-black">A modern landing page redesign for Arena Animation focused on
+                              improving
+                              visual hierarchy, user experience, and conversion.</p>
+                          </div>
+
+
+                          <div class="project-btn">
+                            <a href="https://rohan-aa.github.io/WebPageChallenge/ " target="_blank" class="btn-demo"
+                              rel="noopener noreferrer" aria-label="live">
+                              Live Demo<svg class="icon-arrow" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--mobile-->
+              <div class="tab-pane fade" id="mobile">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-4">
+                    <div class="project-card-modern" data-aos="zoom-in" data-aos-delay="150">
+
+                      <!-- Image -->
+                      <div class="project-img">
+                        <img src="img/ui.png" alt="Project Image">
+                      </div>
+
+                      <!-- Content -->
+                      <div class="project-content">
+
+                        <!-- Tech Pills -->
+                        <div class="project-tags">
+                          <span class="tag">Figma</span>
+                        </div>
+
+                        <!-- Title + Button -->
+                        <div class="project-footer">
+                          <div class="project-body">
+                            <h5 class="project-title">
+                              <span>Maidigo</span> – Home Services <br>Mobile App (UI/UX Design)
+                            </h5>
+                            <p class="mt-2 text-black">Maidigo is a home services mobile app designed for busy urban
+                              families to
+                              easily book trusted helpers for cleaning, cooking etc.</p>
+                          </div>
+
+                          <div class="project-btn">
+                            <a href="https://www.figma.com/proto/LWrXK46qXDbDjEgze5RO2o/Maidigo?page-id=1%3A2&node-id=5-2&p=f&viewport=92%2C324%2C0.05&t=uOsRk8sUQSX3rKen-1&scaling=scale-down&content-scaling=fixed"
+                              target="_blank" class="btn-demo">
+                              Live Prototype<svg class="icon-arrow" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Case Study -->
+              <div class="tab-pane fade" id="case">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-4">
+                    <div class="project-card-modern" data-aos="zoom-in" data-aos-delay="150">
+
+                      <!-- Image -->
+                      <div class="project-img">
+                        <img src="img/maidigo_thumbnail.png" alt="Project Image">
+                      </div>
+
+                      <!-- Content -->
+                      <div class="project-content">
+
+                        <!-- Tech Pills -->
+                        <div class="project-tags">
+                          <span class="tag">Figma</span>
+                        </div>
+
+                        <!-- Title + Button -->
+                        <div class="project-footer">
+                          <div class="project-body">
+                            <h5 class="project-title">
+                              <span>Maidigo</span> – Home Services <br>Mobile App (UI/UX Design)
+                            </h5>
+                            <p class="mt-2 text-black">Created to help busy urban families manage daily household tasks
+                              by making
+                              reliable home services easy to book.</p>
+                          </div>
+
+                          <div class="project-btn">
+                            <a href="https://www.figma.com/proto/LWrXK46qXDbDjEgze5RO2o/Maidigo?page-id=0%3A1&node-id=689-368&p=f&viewport=257%2C87%2C0.08&t=fMh8bMYtdAyusUPL-1&scaling=scale-down-width&content-scaling=fixed"
+                              target="_blank" class="btn-demo">
+                              View Case Study<svg class="icon-arrow" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- web design -->
+              <div class="tab-pane fade" id="hero">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-4">
+                    <div class="project-card-modern" data-aos="zoom-in" data-aos-delay="150">
+
+                      <!-- Image -->
+                      <div class="project-img">
+                        <img src="img/landing page.png" alt="Project Image">
+                      </div>
+
+                      <!-- Content -->
+                      <div class="project-content">
+
+                        <!-- Tech Pills -->
+                        <div class="project-tags">
+                          <span class="tag">HTML</span>
+                          <span class="tag">CSS</span>
+                          <span class="tag">JS</span>
+                          <span class="tag">Figma</span>
+                        </div>
+
+                        <!-- Title + Button -->
+                        <div class="project-footer">
+                          <div class="project-body">
+                            <h5 class="project-title">
+                              <span>Edvora</span> – Smart Quiz Platform
+                            </h5>
+                            <p class="mt-2">A modern quiz platform designed for schools and institutes to easily create,
+                              share, and manage quizzes for their students.</p>
+                          </div>
+
+                          <div class="project-btn">
+                            <a href="https://rohan-aa.github.io/WebPageChallenge/ " target="_blank" class="btn-demo">
+                              Live Demo<svg class="icon-arrow" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- mini-projects -->
+              <div class="tab-pane fade" id="product">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-4">
+                    <div class="project-card-modern" data-aos="zoom-in" data-aos-delay="150">
+
+                      <!-- Image -->
+                      <div class="project-img">
+                        <img src="img/login.png" alt="Project Image">
+                      </div>
+
+                      <!-- Content -->
+                      <div class="project-content">
+
+                        <!-- Tech Pills -->
+                        <div class="project-tags">
+                          <span class="tag">HTML</span>
+                          <span class="tag">CSS</span>
+                        </div>
+
+                        <!-- Title + Button -->
+                        <div class="project-footer">
+                          <div class="project-body">
+                            <h5 class="project-title">
+                              <span>Login</span> Page Design
+                            </h5>
+                            <p class="mt-2">A responsive login page designed with a clean user interface, including form
+                              validation and user-friendly layout for authentication systems.</p>
+                          </div>
+
+                          <div class="project-btn">
+                            <a href="https://rohan-aa.github.io/Login-Page/" target="_blank" class="btn-demo"
+                              rel="noopener noreferrer" aria-label="live">
+                              Live Demo<svg class="icon-arrow" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-wrapper">
+        <div class="ribbon">
+          <div class="ribbon-inner">
+            <div class="ribbon-text">
+              UX Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              UI Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              App Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              Web Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+              Web Developer<span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              &nbsp;&nbsp;&nbsp;
+              UX Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              UI Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              App Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+
+              Web Designer <span><svg viewbox="0 0 100 100" width="40" height="40">
+                  <path fill="#bb86fc" d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+                </svg>
+              </span>
+              Web Developer
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="discuss" id="contact" data-aos="fade-up">
+      <div class="container">
+        <div class="discuss-head">
+          <h3 class="text-center section-title">Let’s Create Something Together <br>— <span>From Idea to Reality</span>
+          </h3>
+        </div>
+        <div class="row discuss-container">
+          <div class="col-md-5 mt-5">
+            <div class="test-header d-flex gap-3 align-items-center">
+              <div class="d-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="d-name">
+                <h4>Email</h4>
+                <a href="mailto:mehraniraj194@gmail.com" target="_blank">mehraniraj194@gmail.com</a>
+              </div>
+            </div>
+
+
+            <div class="test-header d-flex gap-3 mt-4 align-items-center">
+              <div class="d-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="d-name">
+                <h4>Mobile No.</h4>
+                <a href="tel:+918800760149">+91 8800760149</a>
+              </div>
+            </div>
+
+            <div class="test-header d-flex gap-3 mt-4 align-items-center">
+              <div class="d-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="d-name">
+                <h4>Github</h4>
+                <a href="https://github.com/rohan-aa" target="_blank"
+                  rel="noopener noreferrer">https://github.com/rohan-aa</a>
+              </div>
+            </div>
+
+
+            <div class="test-header d-flex gap-3 mt-4 align-items-center">
+              <div class="d-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="d-name">
+                <h4>Location</h4>
+                <a href="#">New Delhi,India</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7 mt-5">
+            <form action="#" id="contact-form" data-aos="fade-left">
+              <div class="name-input d-flex gap-5 justify-content-between">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" name="user_name">
+                </div>
+                <div class="">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email" placeholder="Enter email" name="user_email">
+
+                </div>
+              </div>
+              <div class="subject-title">
+                <div class="mb-3  mt-3">
+                  <label for="pr" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="pr" placeholder="Enter Subject" name="project">
+                </div>
+              </div>
+              <div class="message">
+                <div class="mb-3 mt-3">
+                  <label for="comment" class="form-label">Message:</label>
+                  <textarea class="form-control" rows="5" id="comment" name="message"
+                    placeholder="Write your message"></textarea>
+                </div>
+              </div>
+              <div class="send">
+                <button type="submit" class="btn buton-flex mt-3">
+                  Send a message <i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center foot-header">
+        <div class="col-md-8 text-start">
+          <div class="tag">
+            <h4>Let's Build Together</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center footer-main-row mt-5">
+        <div class="col-md-4 text-start">
+          <div class="img-tag d-flex align-items-center gap-3">
+            <a href="#"><img src="img/logo.webp" alt="" height="40px"></a>
+            <h4 class="mb0">ROHAN</h4>
+          </div>
+          <div class="foot-text mt-4">
+            <p>I build responsive, fast, and user-friendly websites
+              using clean code and modern web technologies.Always focused on performance, usability, and continuous
+              improvement.</p>
+          </div>
+          <div class="socio-links d-flex gap-2 mt-5">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.behance.net/rohanmehra9" target="_blank" rel="noopener noreferrer"
+              aria-label="behance"><i class="fa-brands fa-square-behance"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 text-start">
+          <div class="navi">
+            <h5>Navigation</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About Us</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#education" class="nav-link">Education</a></li>
+              <li><a href="#project" class="nav-link">Project</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="cont">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li><a href="mailto:mehraniraj194@gmail.com" class="nav-link" target="_blank" rel="noopener noreferrer"
+                  aria-label="mail">mehraniraj194@gmail.com</a></li>
+              <li><a href="tel:+918800760149" class="nav-link">+91 8800760149</a></li>
+              <li><a href="https://github.com/rohan-aa" class="nav-link" target="_blank" rel="noopener noreferrer"
+                  aria-label="github">https://github.com/rohan-aa</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="copy">
+          <p class="text-center">Copyright&copy; 2026 Rohanprototype. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    new Typed("#typed-text", {
+      strings: ["Web Developer", "Web Designer", "Graphic Designer"],
+      typeSpeed: 80,
+      backSpeed: 60,        // slightly faster delete
+      backDelay: 1500,      // pause before deleting
+      loop: true,
+      smartBackspace: false,
+      fadeOut: false
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+
+<script>
+    // Initialize EmailJS
+  emailjs.init("rQgTrwg5y5P-vw598");
+
+  // Form submit event
+  document.getElementById("contact-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "service_brnh5ba",
+        "template_u0uo4j3",
+        this
+      )
+      .then(() => {
+        alert("Message sent successfully ✅");
+        this.reset();
+      })
+      .catch(error => {
+        alert("Failed to send message ❌");
+        console.error(error);
+      });
+    });
+</script>
+
+</body>
+
+</html>
