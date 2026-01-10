@@ -1508,11 +1508,15 @@ footer .latest {
   .candidate-img {
     width: 80vw;
     max-width: 100%;
+    margin-top: 20px;
   }
 
   .candidate-img img {
-    width: clamp(160px, 45vw, 200px);
-    margin-bottom: 10px;
+    width: 60vw; /* smaller percentage of screen width */
+    max-width: 180px; /* hard cap so it never gets too big */
+    height: auto; /* maintain aspect ratio */
+    margin: 0 auto 15px auto;
+    display: block;
   }
 
   .skills .card-header .title {
@@ -1616,7 +1620,7 @@ footer .latest {
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #000; /* change color if needed */
+    background-color: var(--bg-color); /* change color if needed */
     border-radius: 2px;
   }
 
