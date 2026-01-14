@@ -852,7 +852,6 @@ form .message textarea {
   width: 100%;
   background-color: var(--accent-color);
   padding: 14px 0px;
-  border-radius: 20px 0px 20px 0;
 }
 .ribbon-inner {
   background-color: var(--bg-color);
@@ -1507,7 +1506,7 @@ footer .latest {
   /* Header text */
   .tag h4 {
     font-size: 26px;
-    text-align: start;
+    text-align: center;
   }
 
   .foot-header {
@@ -1528,28 +1527,33 @@ footer .latest {
 
   /* Logo section */
   .img-tag {
-    justify-content: start;
+    justify-content: center;
   }
 
   .foot-text p {
     font-size: 13px;
     margin-top: 10px;
+    text-align: center;
   }
 
   /* Social icons */
   .socio-links {
-    justify-content: start;
+    justify-content: center;
     margin-top: 25px;
   }
 
   .socio-links i {
     font-size: 18px;
   }
-
+  .navi h5,
+  .cont h5{
+    text-align: center;
+    margin-bottom: 12px;
+  }
   /* Navigation & Contact */
   .navi ul,
   .cont ul {
-    align-items: start;
+    align-items: center;
     gap: 12px;
   }
 
@@ -1618,7 +1622,7 @@ footer .latest {
     justify-content: center;
     align-items: center;
     left: 50%;
-    bottom: 24px;
+    bottom: 14px;
     transform: translateX(-50%) scale(0.95);
     margin-top: 20px;
   }
