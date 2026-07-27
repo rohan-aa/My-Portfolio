@@ -1,4 +1,4 @@
-const slider = document.querySelector(".pill-slider");
+﻿const slider = document.querySelector(".pill-slider");
 const cvBtn = document.getElementById("cvBtn");
 const hireBtn = document.getElementById("hireBtn");
 
@@ -57,3 +57,6 @@ document.querySelectorAll(".nav-center .nav-link").forEach((link) => {
     hamburger.classList.remove("active");
   });
 });
+
+
+

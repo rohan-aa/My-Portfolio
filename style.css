@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1202,11 +1202,19 @@ footer .latest {
 .cont a:hover {
   color: var(--accent-color);
 }
+.portfolio .tab-pane .row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Card */
 .project-card-modern {
   max-width: 340px;
   width: 100%;
+  flex: 1;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 22px;
   overflow: hidden;
@@ -1220,12 +1228,14 @@ footer .latest {
 }
 .project-img {
   position: relative;
+  flex: 0 0 200px;
   overflow: hidden;
 }
 /* Image */
 .project-img img {
   width: 100%;
   height: 200px;
+  display: block;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -1234,6 +1244,9 @@ footer .latest {
 }
 /* Content */
 .project-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -1242,6 +1255,7 @@ footer .latest {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  min-height: 34px;
   margin-bottom: 14px;
 }
 
@@ -1258,6 +1272,7 @@ footer .latest {
 .project-footer {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: start;
   justify-content: space-between;
 }
@@ -1272,14 +1287,15 @@ footer .latest {
 /* Arrow Button */
 .project-btn {
   display: flex;
+  margin-top: auto;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
 .project-btn a {
   text-decoration: none;
-  border-radius: 12px;
-  padding: 8px 16px;
+  border-radius: 999px;
+  padding: 8px 8px;
   background-color: var(--text-color);
   color: var(--bg-color);
   white-space: nowrap;
@@ -1441,7 +1457,7 @@ footer .latest {
   }
 }
 
-/* Mobile-friendly Academic Journey (≤768px) */
+/* Mobile-friendly Academic Journey (â‰¤768px) */
 @media (max-width: 768px) {
   .education .row.align-items-center {
     flex-direction: column; /* stack cards vertically */
@@ -1587,7 +1603,7 @@ footer .latest {
   }
 }
 /* ===============================
-   MOBILE DEVICES (≤576px)
+   MOBILE DEVICES (â‰¤576px)
 ================================ */
 @media (max-width: 576px) {
   body,
@@ -1811,7 +1827,7 @@ footer .latest {
 }
 
 /* ===============================
-    EXTRA SMALL PHONES (≤430px)
+    EXTRA SMALL PHONES (â‰¤430px)
   ================================ */
 @media (max-width: 430px) {
   .half-circle {
@@ -1861,3 +1877,55 @@ footer .latest {
     padding: 5px 12px;
   }
 }
+
+
+.project-scroll{
+    display:flex;
+    gap:24px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding:20px 0 30px;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+}
+
+.project-scroll::-webkit-scrollbar{
+    height:8px;
+}
+
+.project-scroll::-webkit-scrollbar-track{
+    background:#ececec;
+    border-radius:50px;
+}
+
+.project-scroll::-webkit-scrollbar-thumb{
+    background:#bb86fc;
+    border-radius:50px;
+}
+
+.project-item{
+    flex:0 0 380px;
+    scroll-snap-align:start;
+}
+
+.project-card-modern{
+    height:100%;
+}
+
+@media (max-width:992px){
+
+.project-item{
+    flex:0 0 320px;
+}
+
+}
+
+@media (max-width:576px){
+
+.project-item{
+    flex:0 0 90%;
+}
+
+}
+
